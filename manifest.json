@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "new coincidence",
+  "version": "0.01",
+
+  "description": "Detects Coincidences",
+
+  "permissions": ["activeTab", "contextMenus", "tabs", "storage"],
+
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["./dist/js/theList.js", "./dist/js/coincidence.js"] }]
+}
